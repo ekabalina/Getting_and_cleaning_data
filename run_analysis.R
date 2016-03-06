@@ -37,3 +37,5 @@ data_set[, 1] = activity_labels[data_set[, 1], 2]
 #with the average of each variable for each activity and each subject.
 melted<-melt(data_set, id = c("Subject", "Activity"))
 final_mean<- dcast(melted, Subject+Activity ~ variable,mean)
+
+write.table(final_mean, "./final_mean.txt", row.name = FALSE)
