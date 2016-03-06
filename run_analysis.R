@@ -24,6 +24,7 @@ names(features) <- c('id', 'name')
 f_index <- grep("-mean()|-std()", features$name) 
 data_set <- data_set[, f_index]
 names(data_set) <-c("Activity", "Subject", gsub("[()-]", "", (features[f_index,2])))
+names(data_set)<-gsub("BodyBody", "Body", names(data_set))
 
 #3.Uses descriptive activity names to name the activities in the data set
 #4.Appropriately labels the data set with descriptive variable names.
