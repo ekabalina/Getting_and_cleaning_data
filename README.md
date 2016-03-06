@@ -13,4 +13,4 @@ run_analysis.R does the following:
 
 5. Creates a tidy dataset that consists of the average value of each variable for unique subject|activity pair.
 
-Output is shown in the file final_mean.txt.
+Subset from output is shown in the file final_mean.txt.
