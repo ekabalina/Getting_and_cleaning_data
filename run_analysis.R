@@ -1,10 +1,10 @@
 #read train data sets
-setwd("/home/elina/data/UCI HAR Dataset/train")
+setwd("/home/xx/data/UCI HAR Dataset/train")
 x_train <- read.table("./X_train.txt", header = FALSE) 
 y_train <- read.table("./y_train.txt", header = FALSE)
 s_train <- read.table("./subject_train.txt", header = FALSE) 
 #read test data sets
-setwd("/home/elina/data/UCI HAR Dataset/test")
+setwd("/home/xx/data/UCI HAR Dataset/test")
 x_test <- read.table("./X_test.txt", header = FALSE) 
 y_test<- read.table("./y_test.txt", header = FALSE) 
 s_test <- read.table("./subject_test.txt", header = FALSE)
@@ -17,7 +17,7 @@ s_merge <- rbind(s_train, s_test)
 data_set <- cbind(y_merge, s_merge, x_merge)
 
 #2.Extracts only the measurements on the mean and standard deviation for each measurement.
-setwd("/home/elina/data/UCI HAR Dataset")
+setwd("/home/xx/data/UCI HAR Dataset")
 features <- read.table("./features.txt")
 head(features)
 names(features) <- c('id', 'name')
