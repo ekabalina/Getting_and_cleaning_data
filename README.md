@@ -7,7 +7,7 @@ run_analysis.R does the following:
 
 2. Merge test data with  train set using cbind() function
  
-3. Keeps columns that contain mean or standard deviation related variables
+3. Keeps columns that contain mean or standard deviation related variables and set appropriate column names
 
 4. Reads activity, subject data and merges them to existed data set
 
