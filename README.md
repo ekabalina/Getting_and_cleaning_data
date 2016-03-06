@@ -3,7 +3,7 @@ Coursera project for the Getting and Cleaning Data Coursera course.
 
 run_analysis.R does the following:
 
-1.Read data from working directory: 3 train, 3 test datasets.
+1. Read data from working directory: 3 train, 3 test datasets.
 
 2. Merge test data with  train set using cbind() function
  
