@@ -11,9 +11,7 @@ s_test <- read.table("./subject_test.txt", header = FALSE)
 #merge train and test sets
 x_merge<- rbind(x_train, x_test) 
 y_merge <- rbind(y_train, y_test) 
-names(y_merge)<-"Activity"
 s_merge <- rbind(s_train, s_test)
-names(s_merge) <- "Subject"
 
 #1.Merges the training and the test sets to create one data set
 data_set <- cbind(y_merge, s_merge, x_merge)
@@ -25,6 +23,7 @@ head(features)
 names(features) <- c('id', 'name')
 f_index <- grep("-mean()|-std()", features$name) 
 data_set <- data_set[, f_index]
+names(data_set) <-c("Activity", "Subject", gsub("[()-], "", (features[f_index,2])))
 
 #3.Uses descriptive activity names to name the activities in the data set
 #4.Appropriately labels the data set with descriptive variable names.
