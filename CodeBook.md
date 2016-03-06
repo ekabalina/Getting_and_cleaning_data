@@ -7,7 +7,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 data and additional information can be found  here: https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-As the result of first 4 steps we got merged test and train data sets; indexes of entries that match feature criteria - variables are mean or stddev related -  were arranged in vector; names of the variables and  corresponding  observations were subseted:
+As the result of first 4 steps we get merged test and train data sets; indexes of entries that match feature criteria - variables are mean or stddev related -  were arranged in vector; names of the variables and  corresponding  observations were subseted:
 
 79 variables from initial data set (561 variables) were selected  using  grep("-mean()|-std()", features$name) function.
 [ features name samples: fBodyAcc-mean()-Z, fBodyGyro-std()-Y, ... ]. Column names set up  appropriate after cleaning - dublicates such as "BodyBody" replaced with "Body" , "()-" part removed from variable names. 
